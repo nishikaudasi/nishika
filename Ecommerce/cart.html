@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" a href="F:\Web Development\Ecommerce\ecom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <div class="navbar">
+          <div class="logo">
+        <img src="logo.png"width="125px">
+      </div>
+      <nav>
+            <a href="F:\Web Development\Ecommerce\ecom.html">HOME</a>
+            <a href="F:\Web Development\Ecommerce\products.html">PRODUCTS</a>
+            <a href="F:\Web Development\Ecommerce\contact.html">CONTACT</a>
+            <a href="F:\Web Development\Ecommerce\account.html">ACCOUNT</a>
+     </nav>
+     <img src="cart.png" width="30px" height="30px">
+     <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+     </div></div>
+     
+<!-- cart items details"> -->
+    <div class="smallcontainer cartpage">
+        <table>
+            <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Total</th></tr>
+            <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="buy-1.jpg">
+                </div>
+                <p>Red Printed Tshirt</p>
+                <small>Price:$50.00</small>
+                <a href="">Remove</a></td>
+            <td><input type="number" value="1"></td>
+            <td>$50</td></tr>
+            <tr>
+                <td>
+                    <div class="cartinfo">
+                        <img src="buy-2.jpg">
+                    </div>
+                    <p>Black Shoes</p>
+                    <small>Price:$150.00</small>
+                    <a href="">Remove</a></td>
+                <td><input type="number" value="1"></td>
+                <td>$150</td></tr>
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="buy-3.jpg">
+                        </div>
+                        <p>Grey Track Pant</p>
+                        <small>Price:$100.00</small>
+                        <a href="">Remove</a></td>
+                    <td><input type="number" value="1"></td>
+                    <td>$100</td></tr>         
+        </table>
+        <div class="totalprice">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$230</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--footer  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footercol1">
+                    <h3> Download Our App</h3>
+                    <p> Download App for Android and Ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footercol2">
+                    <img src="logo-white.png">
+                    <p>Our Purpose Is to Sustainability Make the Pleasure 
+                        and Benefits of Sports Accessible To The Many.</p>
+                </div>
+                <div class="footercol3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                      <li>Return Policy</li>
+                      <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footercol4">
+                    <h3> Follow Us</h3>
+                    <ul>
+                    <li> Facebook</li>
+                    <li> Twitter</li>
+                    <li> Instagram</li>
+                    <li> You Tube</li>
+                </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020-Easy Tutorials</p>
+        </div>
+    </div>
+    
+<!-- js for toggle Menu -->
+<script>
+    var MenuItems=document.getElementByID("MenuItems");
+    MenuItems.style.maxHeight=0px;
+     function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+     }
+</script>
+
+</body>
+</html>

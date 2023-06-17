@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" a href="F:\Web Development\Ecommerce\ecom.css">
+    <link rel="homepage"   a href="F:\Web Development\Ecommerce\ecom.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Laila&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <div class="navbar">
+          <div class="logo">
+        <img src="logo.png"width="125px">
+      </div>
+      <nav>
+            <a href="F:\Web Development\Ecommerce\ecom.html">HOME</a>
+            <a href="F:\Web Development\Ecommerce\products.html">PRODUCTS</a>
+            <a href="F:\Web Development\Ecommerce\contact.html">CONTACT</a>
+            <a href="F:\Web Development\Ecommerce\account.html">ACCOUNT</a>
+     </nav>
+     <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+     <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+     </div></div>
+     <!-- single product details -->
+    <div class="singleproduct">
+        <div class="row">
+            <div class="col2">
+                    <img src="gallery-1.jpg" width="100%" id="ProductImg">        
+                    <div class="smallimgrow">
+                        <div class="smallimgcol">
+                            <img src="gallery-1.jpg" class="smallimg">
+                        </div>
+                        <div class="smallimgcol">
+                            <img src="gallery-2.jpg" class="smallimg">
+                        </div>
+                        <div class="smallimgcol">
+                            <img src="gallery-3.jpg" class="smallimg">
+                        </div>
+                        <div class="smallimgcol">
+                            <img src="gallery-4.jpg" class="smallimg">
+                        </div>
+                    </div></div>
+        <div class="col2">
+            <p>Home/Red T-shirt</p>
+            <h1>Red printed Tshirt by HRX</h1>
+            <h4>$50</h4>
+            <select>
+            <option>Select Size</option>
+            <option>Xl</option>
+            <option>M</option>
+            <option>Xxl</option>
+            <option>Xxxl</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+
+
+            <h3>Product Details</h3>
+            <p>Give your summer wardrobe a style upgrade with the HRX 
+                Men's Active T-shirt. Team it with a pair of shorts for your morning
+                workout or a denims for an evening out with the guys.</p>
+            </div>
+        </div>
+    </div>
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    <!-- products -->
+    <div class="small-container">
+         <div class="row">
+            <div class="col4">
+                <img src="product-9.jpg ">
+                <h4>Leather belt watch</h4>
+                <p>$50.00</p>
+            </div>
+            <div class="col4">
+                <img src="product-10.jpg ">
+                <h4>Black Shoes</h4>
+                <p>$150.00</p>
+             </div>
+            <div class="col4">
+              <img src="product-11.jpg ">
+              <h4>Grey Shoes</h4>
+              <p>$100.00</p>
+            </div>
+           <div class="col4">
+             <img src="product-12.jpg ">
+             <h4>Track Pant</h4>
+             <p>$150.00</p>
+        </div>
+    </div></div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>  
+        <span>&#8594</span> 
+     </div>
+</div> 
+<!-- brands -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col5">
+                <img src="logo-godrej.png">
+            </div>
+            <div class="col5">
+                <img src="logo-oppo.png">
+            </div>
+             <div class="col5">
+                <img src="logo-coca-cola.png">
+            </div>
+            <div class="col5">
+                <img src="logo-paypal.png">
+            </div>
+            <div class="col5">
+                <img src="logo-philips.png">   
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer  -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footercol1">
+                <h3> Download Our App</h3>
+                <p> Download App for Android and Ios Mobile Phone.</p>
+                <div class="app-logo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footercol2">
+                <img src="logo-white.png">
+                <p>Our Purpose Is to Sustainability Make the Pleasure 
+                    and Benefits of Sports Accessible To The Many.</p>
+            </div>
+            <div class="footercol3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affliate</li>
+                </ul>
+            </div>
+            <div class="footercol4">
+                <h3> Follow Us</h3>
+                <ul>
+                <li> Facebook</li>
+                <li> Twitter</li>
+                <li> Instagram</li>
+                <li> You Tube</li>
+            </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020-Easy Tutorials</p>
+    </div>
+</div>
+<!-- js for toggle Menu -->
+<script>
+    var MenuItems=document.getElementByID("MenuItems");
+    MenuItems.style.maxHeight=0px;
+     function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+     }
+</script>
+<!--js for product gallery  -->
+<script>
+    var ProductImg=document.getElementById("ProductImg");
+    var SmallImg=document.getElementsByClassName("smallimg");
+
+
+    SmallImg[0].onclick=function()
+    {
+        ProductImg.src=SmallImg[0].src;
+    }
+        SmallImg[1].onclick=function()
+    {
+        ProductImg.src=SmallImg[1].src;
+    }    
+        SmallImg[2].onclick=function()
+    {
+        ProductImg.src=SmallImg[2].src;
+    }    
+        SmallImg[3].onclick=function()
+    {
+        ProductImg.src=SmallImg[3].src;
+    }
+</script>
+</body>
+</html>
